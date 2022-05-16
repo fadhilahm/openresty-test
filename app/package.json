@@ -1,0 +1,18 @@
+{
+  "name": "header",
+  "version": "1.0.0",
+  "description": "A server that will provide necessary data to be given to openresty.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ."
+  },
+  "author": "fadhilahm",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
