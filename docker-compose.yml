@@ -1,0 +1,13 @@
+version: "3"
+services:
+  open-resty-test:
+    build: .
+    container_name: open-resty-test
+    image: open-resty-test
+    environment:
+      LOG_LEVEL: debug
+    logging: 
+      driver: local
+    restart: always
+    ports:
+      - 8080:8080
