@@ -15,3 +15,11 @@ services:
       - type: bind
         source: ./conf
         target: /etc/nginx/conf.d
+  signature-provider:
+    build:
+      context: ./app
+      args:
+        - PORT=3000
+    container_name: signature-provider
+    image: signature-provider
+    

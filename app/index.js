@@ -6,7 +6,7 @@ app.get("/", async (req, res) => {
   // Lengthy (probably async??) process.
   await setTimeout(() => {}, 1000);
   res.status(200).json({
-    signature: "<dummy-signature>",
+    signature: "[dummy-signature]",
   });
 });
 

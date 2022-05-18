@@ -2,8 +2,12 @@
 
 Repo to play around with NGINX + Lua + OpenResty in a simpler development environment.
 
-## Starting The OpenResty Service
+## Development Using Docker Container
 
-In order to set up the webserver for development, run the following command on the folder's root:
+Go to the root directory of this project and run the following command:
 
-```$ openresty -p `pwd`/ -c conf/nginx.conf```
+```shell
+docker-compose up --build
+```
+
+By default, you could check whether the project is running or not on `http://localhost:3000`. If it returns a dummt signature, You`ve successfully run this project.
